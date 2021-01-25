@@ -1,7 +1,7 @@
 /* Global */
 :root {
   /* Color */
-  -color-white: #ffffff;
+  --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
   --color-pink: #fe918d;
@@ -27,11 +27,28 @@
   --weight-regular: 400;
 
   /* Size */
+  --size-bolder-radius: 4px;
 }
 
 /* Universal tags */
 * {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Yusei Magic", sans-serif;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* Typography */
@@ -61,4 +78,38 @@ p {
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 4px 0;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-pink);
+  align-items: center;
+  padding: 16px;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+}
+
+.navbar__menu__item {
+  padding: 8px 12px;
+  margin: 0 4px;
+  color: var(--color-white);
+  cursor: pointer;
+  border-radius: var(--size-bolder-radius);
+}
+
+.navbar__menu__item:hover {
+  background-color: var(--color-dark-pink);
+}
+
+.navbar__menu__item.active {
+  border: 1px solid var(--color-white);
 }
