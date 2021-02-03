@@ -100,6 +100,7 @@ p {
   background-color: transparent;
   align-items: center;
   padding: 16px;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
