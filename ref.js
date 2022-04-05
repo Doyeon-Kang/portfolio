@@ -2,15 +2,12 @@
 
 // Make navbar transparent when it is on the top
 const navbar = document.querySelector('#navbar');
-const sub_menu = document.querySelector('.navbar__sub__menu');
 const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
     if(window.scrollY > navbarHeight) {
         navbar.classList.add('navbar--dark');
-        sub_menu.classList.add('remove');
     } else {
         navbar.classList.remove('navbar--dark');
-        sub_menu.classList.remove('remove');
     }
 });
 
@@ -31,12 +28,6 @@ const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
 navbarToggleBtn.addEventListener('click', () => {
     navbarMenu.classList.toggle('open');
 })
-
-// Handle click on "contact me" button on home
-const contact = document.querySelector('.home__contact');
-contact.addEventListener('click', () => {
-    scrollIntoView('#contact')
-});
 
 // Make home slowly fade to transparent as the window scrolls down.
 const home = document.querySelector('.home__container');

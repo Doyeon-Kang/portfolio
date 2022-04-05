@@ -117,6 +117,20 @@ p {
   display: flex;
 }
 
+.navbar__sub__menu {
+  position: absolute;
+  margin-top: 12px;
+}
+
+.navbar__sub__menu.remove {
+  display: none;
+}
+
+.navbar__sub__menu > li {
+  padding: 3px;
+  font-size: small;
+}
+
 .navbar__logo {
   color: var(--color-white);
   font-size: var(--font-medium);
@@ -124,6 +138,7 @@ p {
 }
 
 .navbar__menu__item {
+  position: relative;
   padding: 8px 12px;
   margin: 0 4px;
   color: var(--color-white);
@@ -135,6 +150,11 @@ p {
 .navbar__menu__item:hover {
   border-color: var(--color-white);
   background-color: var(--color-dark-olive);
+}
+
+.navbar__menu__item:hover .navbar__sub__menu{
+  background-color: var(--color-olive);
+  padding: 8px;
 }
 
 .navbar__toggle-btn {
@@ -419,6 +439,15 @@ p {
   background-color: var(--color-dark-white);
 }
 
+/* Reference */
+.youtube_content {
+  margin-bottom: 48px;
+}
+.youtube_link {
+  color: var(--color-dark-olive);
+  font-weight: var(--weight-bold);
+}
+
 /* Testimonials */
 #testimonials {
   background-color: var(--color-light-white);
@@ -473,6 +502,8 @@ p {
 .contact__email,
 .contact__rights {
   color: var(--color-white);
+  margin-top: 20px;
+
 }
 
 .contact__title {
