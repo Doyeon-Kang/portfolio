@@ -215,6 +215,23 @@ p {
   margin: 80px 0;
 }
 
+.about__awards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 50px 0;
+}
+
+.about__awards table {
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.about__awards table td {
+  padding: 10px 20px;
+}
+
 .major__icon {
   width: 170px;
   height: 170px;
