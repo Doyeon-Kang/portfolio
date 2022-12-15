@@ -7,10 +7,7 @@
     <meta name="description" content="Portfolio for world-renowned software engineer Doyeon">
     <meta name="author" content="Doyeon">
     <link rel="icon" type="image/icon" href="imgs/유튜브 프로필.jpg">
-    <script 
-        src="https://kit.fontawesome.com/9002ad36d0.js" 
-        crossorigin="anonymous">
-    </script>
+    <script src="https://kit.fontawesome.com/31b515d57a.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
@@ -28,16 +25,18 @@
     <nav id="navbar">
         <div class="navbar__logo"> 
             <i class="fab fa-angellist"></i>
-            <a href="#">Dobby</a>
+            <a href="/#">Dobby</a>
         </div>
         <div class="navbar__menus">
             <ul class="navbar__menu">
                 <li class="navbar__menu__item"  data-link="#home">Home
                     <ul class="navbar__sub__menu">
                         <li data-link="#about">>About</li>
+                        <li data-link="#skills">>Skills</li>
+                        <li data-link="#awards">>Awards</li>
                     </ul>
                 </li>
-                <li class="navbar__menu__item"><a href="work.html">My work & Skills</a></li>
+                <li class="navbar__menu__item"><a href="work.html">My work</a></li>
                 <li class="navbar__menu__item" data-link="#testimonials" style="display: none;">Testmonial</li>
                 <li class="navbar__menu__item"><a href="ref.html">Reference</a></li>
                 <li class="navbar__menu__item" data-link="#contact">Contact</li>
@@ -65,28 +64,28 @@
     <!-- About -->
     <section id="about" class="section"> 
         <h1>About me</h1>
-        <p>I entered college in 2019 and started my first coding and design study. At first, it was difficult and difficult, but now I am trying to become a great developer and designer.</p>
+        <p>I entered college in 2019 and started my first coding and design study. <br>My major is Content IT and another major is Digital Humanities and Arts. Currently, I am studying to become a UX designer who codes.</p>
         <div class="about__majors">
             <div class="major">
                 <div class="major__icon">
-                    <i class="fab fa-html5"></i>
+                    <i class="fa-solid fa-code"></i>
                 </div>
-                <h2 class="major__title">HTML</h2>
-                <div class="major__description">Basic HTML5 </div>
+                <h2 class="major__title">Front-end</h2>
+                <div class="major__description"></div>
             </div>
             <div class="major">
                 <div class="major__icon">
-                    <i class="fab fa-css3-alt"></i>
+                    <i class="fa-solid fa-sitemap"></i>
                 </div>
-                <h2 class="major__title">CSS</h2>
-                <div class="major__description">Basic CSS3</div>
+                <h2 class="major__title">UI/UX Design</h2>
+                <div class="major__description"></div>
             </div> 
             <div class="major">
                 <div class="major__icon">
-                    <i class="fab fa-js-square"></i>
+                    <i class="fa-solid fa-pen-nib"></i>
                 </div>
-                <h2 class="major__title">JavaScript</h2>
-                <div class="major__description">JS ES5 + ES6</div>
+                <h2 class="major__title">Graphic Design</h2>
+                <div class="major__description"></div>
             </div>
         </div>
         <div class="about__jobs">
@@ -94,20 +93,140 @@
                 <img src="imgs/hallym logo.jpg" alt="hallym university" class='job__logo'>
                 <div class="job__description">
                     <p class="job__name">Hallym University</p>
-                    <p class="job__period">2019.02~2023.2</p>
+                    <p class="job__period">2019.02~2023.08</p>
                 </div>
             </div>
             <div class="job">
-                <img src="imgs/hallym logo.jpg" alt="hallym university" class='job__logo'>
+                <span class="job__logo">
+                    <i class="fa-solid fa-building"></i>
+                </span>
                 <div class="job__description">
-                    <p class="job__name">Hallym University</p>
-                    <p class="job__period">2019.02~2023.2</p>
+                    <p class="job__name">ginger T project Intern</p>
+                    <p class="job__period">2020.09~2020.12</p>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="section__container">
+            <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>
+            I always tried to experience various skills in both coding and design with passion to learn.
+        </p>
+        <div class="skillset">
+            <div class="skillset__left">
+                <h3 class="skillset__title">Skills</h3>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>HTML</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>CSS</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>JavaScript</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>Vue</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>Spring</span>
+                        <span>30%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 30%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>Java</span>
+                        <span>30%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 30%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>Python</span>
+                        <span>30%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 30%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>MySQL</span>
+                        <span>20%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 20%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>Docker</span>
+                        <span>20%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 20%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skillset__right">
+                <div class="tools">
+                    <h3 class="skillset__title">Tools</h3>
+                    <ul class="tools__list">
+                        <li><span>Visual Studio Code</span></li>
+                        <li><span>Eclipse</span></li>
+                        <li><span>Git, Github</span></li>
+                        <li><span>Gephi</span></li>
+                        <li><span>Figma</span></li>
+                        <li><span>Adobe Programs</span></li>
+                        <li><span></span></li>
+                    </ul>
+                </div>
+                <div class="etc">
+                    <h3 class="skillset__title">Etc</h3>
+                    <ul class="etc__list">
+                        <li><span>Google Tools</span></li>
+                        <li><span>Putty, Filezilla</span></li>
+                        <li><span>Cloud Platform</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
     <!-- Awards -->
-    <section id="about" class="section"> 
+    <section id="awards" class="section"> 
         <h1>Awards</h1>
         <p>I participated in various competitions to gain practical experience in both design and coding, and most of them achieved good results</p>
         <div class="about__awards">
@@ -142,7 +261,7 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td>SW중심대학교 소중인의 생활탐구(브이로그) 영상 공모전</td>
+                        <td>SW중심대학 소중인의 생활탐구(브이로그) 영상 공모전</td>
                         <td>장려상</td>
                     </tr>
                     <tr>

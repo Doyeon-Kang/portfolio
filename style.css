@@ -128,7 +128,13 @@ p {
 
 .navbar__sub__menu > li {
   padding: 3px;
+  margin-top: 5px;
   font-size: small;
+}
+
+.navbar__sub__menu > li:hover {
+  background-color: var(--color-olive);
+  padding: 8px;
 }
 
 .navbar__logo {
@@ -150,11 +156,6 @@ p {
 .navbar__menu__item:hover {
   border-color: var(--color-white);
   background-color: var(--color-dark-olive);
-}
-
-.navbar__menu__item:hover .navbar__sub__menu{
-  background-color: var(--color-olive);
-  padding: 8px;
 }
 
 .navbar__toggle-btn {
@@ -275,6 +276,8 @@ p {
 .job__logo {
   width: 50px;
   height: 50px;
+  font-size: 40px;
+  color: var(--color-light-grey);
 }
 
 .job__name,
@@ -304,7 +307,7 @@ p {
 
 .skillset__title {
   color: var(--color-white);
-  padding: 10px;
+  padding: 10px 0 0;
   margin: 0;
 }
 
