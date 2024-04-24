@@ -9,12 +9,12 @@
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
-  --color-olive: #98bf64;
-  --color-dark-olive: #688f37;
+  --color-olive: #4F6F52;
+  --color-dark-olive: #1A4D2E;
   --color-blue: #73aace;
   --color-dark-blue: #417b9d;
-  --color-yellow: #fff7d1;
-  --color-orange: #feb546;
+  --color-yellow: #F5EFE6;
+  --color-orange: #FFC470;
   --color-dark-orange: #ffe777;
   --color-black: #000000;
 
@@ -138,6 +138,7 @@ p {
 }
 
 .navbar__logo {
+  margin-left: 20px;
   color: var(--color-white);
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
@@ -229,8 +230,10 @@ p {
   border-spacing: 0 10px;
 }
 
-.about__awards table td {
+.about__awards table, th, td {
   padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+  border-collapse: collapse;
 }
 
 .major__icon {
@@ -263,9 +266,21 @@ p {
   font-size: var(--font-small);
 }
 
+.div__line {
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px;
+  color: #feb546;
+  background-color: none;
+  border: 2px solid #feb546;
+  margin-top: 20px;
+}
+
 .job {
   display: flex;
   align-items: center;
+  margin-left: 10px;
 }
 
 .job__description {
@@ -274,8 +289,8 @@ p {
 }
 
 .job__logo {
-  width: 50px;
-  height: 50px;
+  width: 44px;
+  height: 44px;
   font-size: 40px;
   color: var(--color-light-grey);
 }
